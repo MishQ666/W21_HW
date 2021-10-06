@@ -5,3 +5,6 @@
 ![5](https://github.com/MishQ666/W21_HW/blob/main/screenshots/5.png)
 ![6](https://github.com/MishQ666/W21_HW/blob/main/screenshots/6.png)
 ![7](https://github.com/MishQ666/W21_HW/blob/main/screenshots/7.png)
+![8](https://github.com/MishQ666/W21_HW/blob/main/screenshots/8.png)
+![9](https://github.com/MishQ666/W21_HW/blob/main/screenshots/9.png)
+![10](https://github.com/MishQ666/W21_HW/blob/main/screenshots/10.png)
