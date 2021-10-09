@@ -8,16 +8,19 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/distribution/RefundablePostDeliveryCrowdsale.sol";
 
 // @TODO: Inherit the crowdsale contracts
-contract PupperCoinSale is Crowdsale, MintedCrowdsale{
+contract PupperCoinSale is Crowdsale, MintedCrowdsale,TimedCrowdsale{
 
     constructor(
         // @TODO: Fill in the constructor parameters!
         uint256 rate, 
-        address payable wallet, 
+        uint256 open, 
+        uint256 close, 
+        address payable wallet,
         PupperCoin token 
     )
         // @TODO: Pass the constructor parameters to the crowdsale contracts.
         public Crowdsale(rate, wallet, token) 
+        TimedCrowdsale(now, now+24 weeks)
     {
         // constructor can stay empty
     }
@@ -41,7 +44,7 @@ contract PupperCoinSaleDeployer {
         token_sale_address = address(token);
 
         // @TODO: create the PupperCoinSale and tell it about the token, set the goal, and set the open and close times to now and now + 24 weeks.
-        PupperCoinSale puppercoin_sale = new PupperCoinSale(1, wallet, token);
+        PupperCoinSale puppercoin_sale = new PupperCoinSale(1,now, now+24 weeks, wallet, token);
         token_sale_address = address(puppercoin_sale);
 
 
