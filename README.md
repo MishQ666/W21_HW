@@ -1,6 +1,6 @@
 ## Unit 21: You sure can attract a crowd!
 
-![crowd](https://monash.bootcampcontent.com/monash-coding-bootcamp/monu-mel-virt-fin-pt-05-2021-u-c/-/raw/master/Homework/Week%2021/Instructions/Images/crowd.jpg)
+![crowd](Images/crowd.jpg)
 _People in Concert - Photo by [Josh Sorenson](https://www.pexels.com/@joshsorenson?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/license/)_
 
 ## Background
